@@ -1,6 +1,4 @@
-Spring
-
-### 概念
+# Spring5概念
 
 是轻量级的开源的JavaEE框架，可以解决企业应用开发的复杂性。
 
@@ -18,9 +16,9 @@ Spring
 
 
 
-### IOC容器
+# IOC容器
 
-#### 概念
+## 概念
 
 > 什么是IOC ?  **IOC就是控制反转，把对象创建和对象调用的过程交给spring管理**
 >
@@ -48,7 +46,7 @@ public class BeanFactory {
 
 
 
-#### 使用IOC容器
+## 使用IOC容器
 
 1.配置xml文件
 
@@ -75,7 +73,7 @@ UserDao userDao  = (UserDao)context.getBean("user");
 
 
 
-#### IOC管理Bean
+## IOC管理Bean
 
 > Bean管理指的是2个操作，1、spring创建对象  2、spring属性注入
 >
@@ -168,7 +166,7 @@ public class UserDao {
 
 
 
-#### IOC操作Bean管理（FactoryBean）
+## IOC操作Bean管理（FactoryBean）
 
 >Springbean 有两种类型的bean
 >
@@ -218,7 +216,7 @@ public void test02(){
 
 
 
-#### IOC操作Bean管理（bean的作用域）
+## IOC操作Bean管理（bean的作用域）
 
 1.在spring里面，设置创建bean实例是单实例还是多实例。
 
@@ -260,7 +258,7 @@ com.yh.com.spring5.demo1.Student@15bbf42f
 
 
 
-#### IOC操作Bean管理（bean的生命周期）
+## IOC操作Bean管理（bean的生命周期）
 
 1.调用无参构造器
 
@@ -276,7 +274,7 @@ bean的后置处理器，创建类，实现BeanPostProcessor接口，实现后�
 
 
 
-#### IOC操作Bean管理（xml自动装配）
+## IOC操作Bean管理（xml自动装配）
 
 根据指定装配规则autowire（ByName、ByType），spring自动将匹配的属性值注入
 
@@ -328,7 +326,7 @@ Daoteach...
 
 
 
-#### IOC操作Bean管理（引入外部属性文件）
+## IOC操作Bean管理（引入外部属性文件）
 
 1.创建外部属性文件，properties格式文件，譬如数据库信息
 
@@ -397,7 +395,7 @@ public void test02(){
 
 
 
-#### IOC操作Bean管理（注解方式）
+## IOC操作Bean管理（注解方式）
 
 什么是注解：
 
@@ -459,7 +457,7 @@ step2：在service注入dao对象，添加dao类型属性，在属性上面添�
 
 
 
-#### 完全注解开发
+## 完全注解开发
 
 （1）创建配置类，替代xml文件
 
@@ -469,9 +467,9 @@ step2：在service注入dao对象，添加dao类型属性，在属性上面添�
 
 
 
-### AOP
+# AOP
 
-#### 概念和原理
+## 概念和原理
 
 面向切面编程，利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的[耦合度](https://baike.baidu.com/item/耦合度/2603938)降低，提高程序的可重用性，同时提高了开发的效率。
 
@@ -485,7 +483,7 @@ step2：在service注入dao对象，添加dao类型属性，在属性上面添�
 
 
 
-#### AOP术语
+## AOP术语
 
 1.连接点：类里面的哪些方法可以被增强，这些方法被称为连接点
 
@@ -503,7 +501,7 @@ step2：在service注入dao对象，添加dao类型属性，在属性上面添�
 
 - 把通知应用到切入点的过程
 
-#### AOP操作
+## AOP操作
 
 1.Spring一般基于AspectJ来实现AOP操作
 
@@ -515,7 +513,7 @@ AspectJ是独立的AOP框架，不属于Spring的组成部分，但是会一起�
 
 > execution([权限修饰符] [返回类型] [类全路径名称] [方法名] (参数列表))
 
-#### AOP实操
+## AOP实操
 
 1.创建2个类
 
@@ -588,7 +586,7 @@ add...
 
 
 
-### 事务
+## 事务
 
 概念：事务是数据库操作最基本的单元，逻辑上的一组操作，要么都成功，要么都失败。
 
